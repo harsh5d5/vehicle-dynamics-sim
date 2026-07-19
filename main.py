@@ -83,6 +83,22 @@ class DynamicBicycle:
         self.vx += a * dt - (self.vx * 0.4) * dt
         self._update_steering(d_delta, dt)
         self.vx = np.clip(self.vx, -20, 20)
-        # Feed-forward for smooth kinematic→dynamic transition
+        # Feed-forward for smooth kinematic--->dynamic transition
         self.vy = self.vx * np.sin(self.beta)
         self.omega = self.vx * np.cos(self.beta) * np.tan(self.delta) / self.L
+
+def _dynamic(self, a, d_delta, dt):
+        self.xc += self.vx * math.cos(self.theta) * dt - self.vy * math.sin(self.theta) * dt
+        self.yc += self.vx * math.sin(self.theta) * dt + self.vy * math.cos(self.theta) * dt
+        self.theta += self.omega * dt
+        vx_safe = max(abs(self.vx), 0.1) * np.sign(self.vx)
+        Ffy = -Cf * math.atan2((self.vy + Lf * self.omega) / vx_safe - self.delta, 1.0)
+        Fry = -Cr * math.atan2((self.vy - Lr * self.omega) / vx_safe, 1.0)
+        self.vx += (a - Ffy * math.sin(self.delta) / m + self.vy * self.omega) * dt - (self.vx * 0.4) * dt
+        self.vy += (Fry / m + Ffy * math.cos(self.delta) / m - self.vx * self.omega) * dt
+        self.omega += (Ffy * Lf * math.cos(self.delta) - Fry * Lr) / Iz * dt
+        self._update_steering(d_delta, dt)
+        self.vx = np.clip(self.vx, -20, 20)
+def reset(self):
+        self.xc = self.yc = self.theta = self.vy = self.omega = self.delta = 0.0
+        self.vx, self.beta = 0.01, 0.0
