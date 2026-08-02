@@ -4,7 +4,7 @@ A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulat
 
 ---
 
-## 📹 Demo Video
+##  Demo Video
 
 <video src="vehicle-dynamics-sim/output.mp4" controls width="100%">
   Your browser does not support the video tag.
