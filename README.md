@@ -24,7 +24,7 @@ A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulat
 
 ---
 
-## 🎮 Controls
+## Controls
 
 | Key | Action |
 | --- | --- |
