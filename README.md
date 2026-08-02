@@ -36,7 +36,7 @@ A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulat
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Install Dependencies
 ```bash
