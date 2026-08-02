@@ -1,4 +1,4 @@
-# 🚗 2D Bicycle Model Vehicle Dynamics Simulation
+#  2D Bicycle Model Vehicle Dynamics Simulation
 
 A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulates car physics, steering, and movement in real-time.
 
