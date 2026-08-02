@@ -14,7 +14,7 @@ A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulat
 
 ---
 
-## ℹ️ About the Project
+##  About the Project
 
 - **Vehicle Physics**: Models car steering and acceleration using the **Bicycle Model**.
 - **Dual Physics Modes**:
