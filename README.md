@@ -6,11 +6,9 @@ A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulat
 
 ##  Demo Video
 
-<video src="vehicle-dynamics-sim/output.mp4" controls width="100%">
-  Your browser does not support the video tag.
-</video>
+![Demo Video](output.gif)
 
-*Video file: [`vehicle-dynamics-sim/output.mp4`](file:///c:/Users/Welcome/Downloads/SEM%206/projects/bycycle_model/vehicle-dynamics-sim/output.mp4)*
+*Direct video file: [`output.mp4`](output.mp4)*
 
 ---
 
@@ -45,5 +43,5 @@ pip install pygame matplotlib numpy
 
 ### 2. Run Simulation
 ```bash
-python vehicle-dynamics-sim/help.py
+python help.py
 ```
