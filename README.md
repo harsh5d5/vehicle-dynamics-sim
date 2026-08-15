@@ -3,7 +3,7 @@
 A simple 2D car simulation built with Python, Pygame, and Matplotlib. It simulates car physics, steering, and movement in real-time.
 
 ---
-
+ 
 ##  Demo Video
 
 ![Demo Video](output.gif)
