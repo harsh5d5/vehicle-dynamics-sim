@@ -8,7 +8,7 @@
 #                │
 #                ▼
 #       Read Keyboard Input
-#       (↑ ↓ ← → Keys)
+#       (↑ ↓ ← → Keys for the moving)
 #                │
 #                ▼
 #    Calculate Vehicle Physics
